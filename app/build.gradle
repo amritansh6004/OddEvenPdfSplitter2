@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.oddevensplitter'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.oddevensplitter"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.tom_roush:pdfbox-android:2.0.27.0'
+}
